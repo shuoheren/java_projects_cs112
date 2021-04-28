@@ -1,0 +1,143 @@
+Name: Shuohe Ren
+BUID: U11807977
+Email:sh1999@bu.edu
+Class:CS 112 
+hw01
+
+Problem 1:
+1.Suppose that a and b are int values. Simplify the following expressions to a   boolean expression involving only a single operator:
+a.(!(a < b) && !(a > b))
+b.( (a < b) == true )
+c.( (a <= b) == false )
+d.(!(a > b) && !(a < a))
+e.( (b < b) || !(a <= b))
+
+Answers:
+a.      a==b
+b.      a<b
+c.		a>b
+d.		a<=b
+e.		a>b
+
+2.Which of the following will create an error because of a misuse of types?
+a.int n = 3 + '3';
+b.double x = (3.4 + (int) 2.1) * "3";
+c.String s = "hi" + 5 + 't' + true + "there";
+
+Answer:
+b will cause an error because of a misuse of types.
+
+3.What do each of the following print? (Be sure you understand WHY!)
+
+a.System.out.println(2 + "bc"); 
+  2bc
+b.System.out.println(2 + 3 + "bc"); 
+  5bc 
+c.System.out.println((2+3) + "bc"); 
+  5bc
+d.System.out.println("bc" + (2+3)); 
+  bc5
+e.System.out.println("bc" + 2 + 3); 
+  bc23
+
+4.Public class test1 {
+    public static integer f( x ) {
+        if(x = 5)
+        x = 1;
+    }
+
+    public static void main [String[] argv] {
+    {
+        System.println('Hello World!')
+    }
+)
+   1. In the first line, we should change "Public" into small "public"
+   2. "integer" should be written as "int"
+   3. There should be a type before x, which should be f(int x)
+   4. When there's no return value, we should add void before f
+   5  Change x=5 to x==5
+   4. There should be a ';'
+   5. It should be ""
+   6. In main method, we should use () instead of [] before String
+   7. Wrong way to print.
+   8. The number of '{'s and '}'s are not the same.
+
+   Here's the correct program:
+
+   public class test1 {
+      public static void f(int x ) {
+        if(x ==5)
+           x = 1;
+        }
+      public static void main (String[] argv) {
+           System.out.println("Hello World!");
+ 		}
+    }
+5.
+3.0
+// System.out.println(3.0)
+i  i>=1 output
+10 true System.out.println(10)
+10 true System.out.println(10)
+10 true System.out.println(10)
+10 true System.out.println(10)
+10 true System.out.println(10)
+10 true System.out.println(10)
+10 true System.out.println(10)
+// infinite loop
+
+6.
+i i<4   j   j>=0   A
+                   {1,1,1,1}
+0 true -1   false  {1,1,1,1}
+1 true  0   true   {1,2,1,1}
+1 true  -1  false  {1,2,1,1}
+2 true  1   true   {1,2,3,1}
+2 true  0   true   {1,2,4,1}
+2 true  -1  false  {1,2,4,1}
+3 true  2   true   {1,2,4,5}
+3 true  1   true   {1,2,4,7}
+3 true  0   true   {1,2,4,8}
+3 true  -1  false  {1,2,4,8}
+4 false            {1,2,4,8}
+i i<4   A[i] output
+0 true  1    System.out.println(1)
+1 true  2    System.out.println(2)
+2 true  4    System.out.println(4)
+3 true  8    System.out.println(8)
+4 false
+// output:
+1
+2
+4
+8
+
+7.
+i   A.length   i<A.length  A[i]   A[i]%2 ==0  A[i]>4  A
+					              {1,2,3,4,5,6}
+0   6          true         1     false       false   {2,2,3,4,5,6}
+1   6          true         2     true                {2,2,3,4,5,6}
+2   6          true         3     false       false   {2,2,6,4,5,6}
+3   6          true         4     true                {2,2,6,4,5,6}
+4   6          true         5     false       true    {2,2,6,4,5,6}
+
+i   A.length   i<A.length   a[i] output
+0   6          true         2    System.out.println(2)
+1   6          true         2    System.out.println(2)
+2   6          true         6    System.out.println(6)
+3   6          true         4    System.out.println(4)
+4   6          true         5    System.out.println(5)
+5   6          true         6    System.out.println(6)
+6   6          false
+
+8.
+A all
+B 2
+C 2
+D all
+E all
+F 6
+G all
+
+
+
